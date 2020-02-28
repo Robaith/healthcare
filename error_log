@@ -1,0 +1,6 @@
+[15-Feb-2020 21:40:45 America/New_York] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Paypal has a deprecated constructor in /home/zitacszl/test.zitamilano.co.uk/application/libraries/Paypal.php on line 93
+[15-Feb-2020 21:49:28 America/New_York] PHP Fatal error:  Call to a member function flashdata() on null in /home/zitacszl/test.zitamilano.co.uk/application/views/install/index.php on line 47
+[15-Feb-2020 21:50:04 America/New_York] PHP Fatal error:  Call to a member function flashdata() on a non-object in /home/zitacszl/test.zitamilano.co.uk/application/views/install/index.php on line 47
+[15-Feb-2020 21:51:37 America/New_York] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Paypal has a deprecated constructor in /home/zitacszl/test.zitamilano.co.uk/application/libraries/Paypal.php on line 93
+[26-Feb-2020 00:56:58 America/New_York] PHP Fatal error:  Call to a member function userdata() on null in /home/zitacszl/test.zitamilano.co.uk/application/controllers/Login.php on line 23
+[26-Feb-2020 01:32:46 America/New_York] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/zitacszl/test.zitamilano.co.uk/application/controllers/Register.php on line 26
