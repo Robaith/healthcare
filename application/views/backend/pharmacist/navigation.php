@@ -38,38 +38,20 @@
             </a>
         </div>
 
-        <div class="sui-hover inline-links animate-in"><!-- You can remove "inline-links" class to make links appear vertically, class "animate-in" will make A elements animateable when click on user profile -->				
-            <a href="<?php echo base_url(); ?>index.php?<?php echo $account_type; ?>/profile">
-                <i class="entypo-pencil"></i>
-                <?php echo get_phrase('edit_profile'); ?>
-            </a>
-
-            <a href="<?php echo base_url(); ?>index.php?<?php echo $account_type; ?>/profile">
-                <i class="entypo-lock"></i>
-                <?php echo get_phrase('change_password'); ?>
-            </a>
-
-            <span class="close-sui-popup">×</span><!-- this is mandatory -->			
-        </div>
     </div>
 
 
     <div style="border-top:1px solid rgba(69, 74, 84, 0.7);"></div>	
     <ul id="main-menu" class="">
-        <!-- add class "multiple-expanded" to allow multiple submenus to open -->
-        <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
 
-        <!-- DASHBOARD -->
         <li class="<?php if ($page_name == 'dashboard') echo 'active'; ?> ">
             <a href="<?php echo base_url(); ?>index.php?pharmacist">
-                <i class="fa fa-desktop"></i>
                 <span><?php echo get_phrase('dashboard'); ?></span>
             </a>
         </li>
         
         <li class="<?php if ($page_name == 'show_all_prescription') echo 'active'; ?> ">
             <a href="<?php echo base_url(); ?>index.php?pharmacist/prescription">
-                <i class="fa fa-desktop"></i>
                 <span><?php echo 'prescription'; ?></span>
             </a>
         </li>
@@ -78,7 +60,6 @@
         
         <li class="<?php if ($page_name == 'edit_profile') echo 'active'; ?> ">
             <a href="<?php echo base_url(); ?>index.php?pharmacist/profile">
-                <i class="entypo-lock"></i>
                 <span><?php echo get_phrase('profile'); ?></span>
             </a>
         </li>

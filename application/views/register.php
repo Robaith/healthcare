@@ -78,26 +78,27 @@
                 <div class="login-content">
 
 
-                    <form method="post" action='index.php?register'>
+                    <form method="post" action='index.php?'>
                         
-                                                                        <div class="form-group">
+
+                        <div class="form-group">
 
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="entypo-user"></i>
                                 </div>
 
-                                <select style='color:black;' class="form-control" name='type'>
+                                <select class="form-control" name='type'>
                                     <option selected disabled>Select Register as</option>
-                                    <option value='doctor'>Doctor</option>
-                                    <option value='patient'>Patient</option>
-                                    <option value='pharmacist'>Pharmacist</option>
+                                    <option value='doctor' style="color: black">Doctor</option>
+                                    <option value='patient' style="color: black">Patient</option>
+                                    <option value='pharmacist' style="color: black">Pharmacist</option>
                                 </select>
                             </div>
 
                         </div>
                         
-                                                <div class="form-group">
+                        <div class="form-group">
 
                             <div class="input-group">
                                 <div class="input-group-addon">
@@ -135,6 +136,7 @@
 
                         <div class="form-group">
                             <input name='btn' type="submit" class="btn btn-primary btn-block btn-login" value='Register'>
+
                                 
                             
                         </div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head >
         <?php
         $system_name = $this->db->get_where('settings', array('type' => 'system_name'))->row()->description;
         $system_title = $this->db->get_where('settings', array('type' => 'system_title'))->row()->description;
@@ -116,6 +116,14 @@
                         </div>
 
 
+                    </form>
+
+                    <form method="post" action="index.php?register">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block btn-register">
+                                Register
+                            </button>
+                        </div>
                     </form>
 
 

@@ -24,7 +24,6 @@
                                 <td>
                     <a  onclick="showAjaxModal('<?php echo base_url();?>index.php?modal/popup/show_prescription_details/<?php echo $row['prescription_id']?>');" 
                         class="btn btn-default btn-sm btn-icon icon-left">
-                            <i class="fa fa-eye"></i>
                             View Prescription
                     </a>
                 
@@ -42,32 +41,13 @@
         var $ = jQuery;
 
         $("#table-2").dataTable({
-            "sPaginationType": "bootstrap",
-            "sDom": "<'row'<'col-xs-3 col-left'l><'col-xs-9 col-right'<'export-data'T>f>r>t<'row'<'col-xs-3 col-left'i><'col-xs-9 col-right'p>>"
+
         });
 
         $(".dataTables_wrapper select").select2({
             minimumResultsForSearch: -1
         });
 
-        // Highlighted rows
-        $("#table-2 tbody input[type=checkbox]").each(function (i, el)
-        {
-            var $this = $(el),
-                    $p = $this.closest('tr');
 
-            $(el).on('change', function ()
-            {
-                var is_checked = $this.is(':checked');
-
-                $p[is_checked ? 'addClass' : 'removeClass']('highlight');
-            });
-        });
-
-        // Replace Checboxes
-        $(".pagination a").click(function (ev)
-        {
-            replaceCheckboxes();
-        });
     });
 </script>

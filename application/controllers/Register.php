@@ -3,14 +3,6 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-/* 	
- * 	@author : Joyonto Roy
- * 	30th July, 2014
- * 	Creative Item
- * 	www.creativeitem.com
- * 	http://codecanyon.net/user/joyontaroy
- */
-
 class Register extends CI_Controller {
     
 
@@ -29,7 +21,7 @@ class Register extends CI_Controller {
         }
        
         $this->session->set_flashdata('message', get_phrase('profile_info_updated_successfuly'));
-        //redirect(base_url() . 'index.php?register');
+        //redirect(base_url() . 'index.php?backend/login');
         
 
         $this->load->view('register');
